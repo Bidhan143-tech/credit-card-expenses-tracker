@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Card Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💳 Expense Tracker</h1>
+
+    <form id="expense-form">
+      <input type="date" id="date" required />
+      <input type="text" id="card" placeholder="Card Name" required />
+      <input type="text" id="merchant" placeholder="Merchant" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="text" id="notes" placeholder="Notes (optional)" />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <h2>🗓️ This Month's Expenses</h2>
+    <div id="summary"></div>
+    <ul id="expense-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
